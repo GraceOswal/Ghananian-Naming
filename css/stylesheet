@@ -1,0 +1,25 @@
+*,*:before,*:after {
+     box-sizing: border-box;
+}
+html{overflow-y: scroll;
+}
+body{
+     font-family: verdana;
+}
+a{
+     text-decoration: none;
+     color:#179674;
+     transition:.10s ease;
+     &:hover{
+          color: #b6dbd1;
+     }
+}
+.form{
+     background: #179674;
+     padding: 50px;
+     max-width: 700px;
+     margin: 60px, auto;
+     border-radius: 4px;
+     box-shadow: blur radius;
+
+}
