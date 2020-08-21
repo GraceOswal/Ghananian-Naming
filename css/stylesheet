@@ -23,3 +23,31 @@ a{
      box-shadow: blur radius;
 
 }
+.tab-group {
+     list-style: none;
+     padding: 0;
+     margin: 5 5 40px 5;
+     &:after{
+          content: "";
+          display: table;
+          clear: both;
+     }
+}
+li a {
+     display: block;
+     text-decoration: none;
+     padding: 25px;
+     background: #179674, .25;
+     color: #b6dbd1;
+     font-size: 30px;
+     float: left;
+     width: 60%
+     text-align: center;
+     cursor: pointer;
+     transition: .10s ease;
+     &:hover{
+          background: darker;
+          color:white;
+     }
+
+}
