@@ -5,6 +5,9 @@ html{overflow-y: scroll;
 }
 body{
      font-family: verdana;
+      background-image: .\Ghananian-Naming\css\img\scapes.jpg;
+     position: fixed;
+
 }
 a{
      text-decoration: none;
@@ -100,7 +103,59 @@ input, textarea{
      width:200px;
      height:200px;
      padding: 5px 10px;
-     background-image: .\Ghananian-Naming\css\img\scapes.jpg;
-     position: fixed;
-     
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    &:focus{ 
+         outline: 0;
+         border-color : none;
+    }
+
+}
+textarea{
+     border: 2px solid gray-light;
+     resize:vertical;
+}
+.field-wrap{
+     position:relative;
+     margin-bottom:60px;
+}
+.top-row{
+     &:after{
+          content:"";
+          display:table;
+          clear:both;
+          >div{
+               float: left;
+               width:58%;
+               margin-right: 10%;
+               &: last-child{
+                    margin:0;
+               }
+          }
+     }
+}
+.button{
+     border:0;
+     outline: none;
+     border-radius: blur;
+     font-size:2rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing:.1em
+     word-spacing: 2em;
+     color:white;
+     transition: all. 5s ease;
+     -webkit-appearance: none;
+     &:hover,&:focus{
+          background:main-dark;
+     }
+}
+.button-block{
+     display:block;
+     width:200%;
+}
+.forgot{
+     margin-top: -25px;
+     text-align: right;
 }
