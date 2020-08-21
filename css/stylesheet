@@ -74,5 +74,33 @@ label{
      transition: all 0.25s ease;
      -webkit-backface-visibility: hidden;
      pointer-events: none;
+     font-size: 30px;
+     .req{
+          margin:4px;
+          color: #0000ff;
+
+     }
+}
+label.active{
+     transform: translateY(60px)
+     left:4px;
+     font-size: 16px;
+     .req {
+          opacity:0;
+     }
+}
+
+label.highlight{
+     color: rgb(255,255,255);
+
+}
+input, textarea{
+     font-size: 32px;
+     display: block;
+     width:200px;
+     height:200px;
+     padding: 5px 10px;
+     background-image: .\Ghananian-Naming\css\img\scapes.jpg;
+     position: fixed;
      
 }
