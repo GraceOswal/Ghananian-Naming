@@ -1,175 +1,185 @@
-                                                                   *,
-                                                               *:before,
-                                                               *:after {
-                                                                   box-sizing: border-box;
-                                                               }
-                                                               
-                                                               html {
-                                                                   overflow-y: scroll;
-                                                               }
-                                                               
-                                                               body {
-                                                                   font-family: verdana;
-                                                                   background-image: url('.\Ghananian-Naming\css\img\scapes.jpg');
-                                                                   position: fixed;
-                                                                   background: #179674;
-                                                               }
-                                                               
-                                                               a {
-                                                                   text-decoration: none;
-                                                                   color: #179674;
-                                                                   transition: .10s ease;
-                                                                   &:hover {
-                                                                       color: #b6dbd1;
-                                                                   }
-                                                               }
-                                                               
-                                                               .form {
-                                                                   background: #179674;
-                                                                   padding: 50px;
-                                                                   max-width: 600px;
-                                                                   margin: 60px, auto;
-                                                                   border-radius: 4px;
-                                                                   box-shadow: blur radius;
-                                                               }
-                                                               
-                                                               .tab-group {
-                                                                   list-style: none;
-                                                                   padding: 0;
-                                                                   margin: 70 70 100px70;
-                                                                   &:after {
-                                                                       content: "";
-                                                                       display: table;
-                                                                       clear: both;
-                                                                   }
-                                                               }
-                                                               
-                                                               li a {
-                                                                   display: block;
-                                                                   text-decoration: none;
-                                                                   padding: 20px;
-                                                                   background: #179674, .25;
-                                                                   color: #02251c;
-                                                                   font-size: 25px;
-                                                                   float: center;
-                                                                   width: 60%;
-                                                                   text-align: center;
-                                                                   cursor: pointer;
-                                                                   transition: .5s ease;
-                                                                   &:hover {
-                                                                       background: darker;
-                                                                       color: rgb(255, 255, 255);
-                                                                   }
-                                                               }
-                                                               
-                                                               .active a {
-                                                                   background: #179674;
-                                                                   color: white;
-                                                               }
-                                                               
-                                                               .tab-content>div:last-child {
-                                                                   display: none;
-                                                               }
-                                                               
-                                                               h1 {
-                                                                   text-align: center;
-                                                                   color: white;
-                                                                   font-weight: thick;
-                                                                   margin: 5 5 40px;
-                                                               }
-                                                               
-                                                               label {
-                                                                   position: absolute;
-                                                                   transform: translateY (6px);
-                                                                   left: 13px;
-                                                                   color: white;
-                                                                   transition: (all 0.25s ease);
-                                                                   -webkit-backface-visibility: hidden;
-                                                                   pointer-events: none;
-                                                                   font-size: 20px;
-                                                                   .req {
-                                                                       margin: 4px;
-                                                                       color: #0000ff;
-                                                                   }
-                                                               }
-                                                               
-                                                               label.active {
-                                                                   transform: translateY(60px);
-                                                                   left: 4px;
-                                                                   font-size: 16px;
-                                                                   .req {
-                                                                       opacity: 0;
-                                                                   }
-                                                               }
-                                                               
-                                                               label.highlight {
-                                                                   color: rgb(255, 255, 255);
-                                                               }
-                                                               
-                                                               input,
-                                                               textarea {
-                                                                   font-size: 24px;
-                                                                   display: block;
-                                                                   width: 100px;
-                                                                   height: 80px;
-                                                                   padding: 5px 8px;
-                                                                   color: rgb(59, 51, 51);
-                                                                   border-radius: 0;
-                                                                   transition: border-color .25s ease, box-shadow .25s ease;
-                                                                   &:focus {
-                                                                       outline: 0;
-                                                                       border-color: none;
-                                                                   }
-                                                               }
-                                                               
-                                                               textarea {
-                                                                   border: 2px solid gray-light;
-                                                                   resize: vertical;
-                                                               }
-                                                               
-                                                               .field-wrap {
-                                                                   position: relative;
-                                                                   margin-bottom: 50px;
-                                                               }
-                                                               
-                                                               .top-row {
-                                                                   &:after {
-                                                                       content: "";
-                                                                       display: table;
-                                                                       clear: both;
-                                                                       .>div {
-                                                                           float: left;
-                                                                           width: 58%;
-                                                                           margin-right: 10%;
-                                                                           &: last-child {
-                                                                               margin: 0;
-                                                                           }
-                                                                       }
-                                                                   }
-                                                                   .button {
-                                                                       border: 0;
-                                                                       outline: none;
-                                                                       border-radius: blur;
-                                                                       font-size: 2rem;
-                                                                       font-weight: bold;
-                                                                       text-transform: uppercase;
-                                                                       padding: 15px;
-                                                                       letter-spacing: .1em;
-                                                                       background: #179674;
-                                                                       word-spacing: 2em;
-                                                                       color: white;
-                                                                       transition: all. 5s ease;
-                                                                       -webkit-appearance: none;
-                                                                       &:hover,
-                                                                       &:focus {
-                                                                           background: main-dark;
-                                                                       }
-                                                                   }
-                                                                   .button-block {
-                                                                       display: block;
-                                                                       width: 100%;
-                                                                   }
-                                                                   .forgot {
-                                                                       margin-top: -25px;
-                                                                       text-align: right;
-                                                                   }
+      *,
+ *:before,
+ *:after {
+      box-sizing: border-box;
+      }
+                                                                       
+      html {
+     overflow-y: scroll;
+      }
+                                                                       
+           body {
+     font-family: verdana;
+     background-image: url('.\Ghananian-Naming\css\img\scapes.jpg');
+    position: fixed;
+     background: #179674;
+      }
+                                                                       
+      a {
+          text-decoration: none;
+          color: #179674;
+          transition: .10s ease;
+          &:hover {
+         color: #b6dbd1;
+     }
+ }
+                                                                       
+ .form {
+     background: #179674;
+     padding: 50px;
+     max-width: 600px;
+     margin: 60px, auto;
+     border-radius: 4px;
+     box-shadow: blur radius;
+      }
+                                                                       
+      .tab-group {
+          list-style: none;
+          padding: 0;
+          margin: 70 70 100px70;
+          &:after {
+              content: "";
+              display: table;
+              clear: both;
+     }
+ }
+                                                                       
+ li a {
+     display: block;
+     text-decoration: none;
+     padding: 20px;
+     background: #179674, .25;
+     color: #02251c;
+     font-size: 25px;
+     float: center;
+     width: 60%;
+     text-align: center;
+
+ cursor: pointer;
+
+ transition: .5s ease;
+
+ &:hover {
+
+    background: darker;
+
+    color: rgb(255, 255, 255);
+
+ }
+  }
+
+  .active a {
+           background: #179674;
+      color: white;
+  }
+
+  .tab-content>div:last-child {
+           display: none;
+  }
+                                                                       
+ h1 {
+      text-align: center;
+color: white;
+font-weight: thick; 
+margin: 5 5 40px; }
+                                                                       
+label { position: absolute; 
+transform: translateY (6px); 
+left: 13px; 
+color: white; 
+transition: (all 0.25s ease); 
+-webkit-backface-visibility: hidden; 
+pointer-events: none;
+font-size: 20px;
+.req {
+      margin: 4px;
+     color: #0000ff;
+
+}
+ }
+                                                                       
+label.active {
+
+ transform: translateY(60px);
+
+ left: 4px;
+
+font-size: 16px;
+
+.req {
+opacity: 0;
+      }
+ }
+                                                                       
+     label.highlight {
+          color: rgb(255, 255, 255);
+     }
+                                                                       
+input,
+ textarea {
+          font-size: 24px;
+          display: block;
+          width: 100px;
+          height: 80px;
+          padding: 5px 8px;
+          color: rgb(59, 51, 51);
+          border-radius: 0;
+          transition: border-color .25s ease;
+           box-shadow: .25s ease;
+ &:focus {
+                         outline: 0;
+                         border-color: none;
+                    
+                }
+                                                                       
+ textarea {
+      border: 2px solid gray-light;
+     resize: vertical;
+      }
+                                                                       
+.field-wrap {
+     position: relative;
+      margin-bottom: 50px;
+ }
+                                                                       
+ .top-row {
+&:after {
+     content: "";
+    display: table;
+    clear: both;
+    .>div {
+        float: left;
+         width: 58%;
+           margin-right: 10%;
+           &: last-child {
+              margin: 0;
+           }
+     }
+}
+ .button {
+      border: 0;
+     outline: none;
+     border-radius: blur;
+     font-size: 2rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     padding: 15px;
+     letter-spacing: .1em;
+     background: #179674;
+     word-spacing: 2em;
+     color: white;
+     transition: all. 5s ease;
+    -webkit-appearance: none;
+        &:hover,
+     &:focus {
+                background: main-dark;
+           }
+ }
+.button-block {
+          display: block;
+          width: 100%;
+}
+.forgot {
+          margin-top: -25px;
+          text-align: right;
+}
