@@ -12,7 +12,7 @@
      font-family: verdana;
      background-image: url('.\Ghananian-Naming\css\img\scapes.jpg');
     position: fixed;
-     background: #179674;
+     background-color: #179674;
       }
                                                                        
       a {
@@ -118,6 +118,7 @@ opacity: 0;
 input,
  textarea {
           font-size: 24px;
+          float: inline;
           display: block;
           width: 100px;
           height: 80px;
